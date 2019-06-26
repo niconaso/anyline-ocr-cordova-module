@@ -27,7 +27,7 @@ function Anyline() {
  * cancels card scanning.
  */
 Anyline.prototype.scan = function(options, onSuccess, onFailure) {
-  cordova.exec(onSuccess, onFailure, "AnylineSDK", "scan", [options]);
+  cordova.exec(onSuccess, onFailure, "AnylineSDK", "scan", options);
 };
 
 
