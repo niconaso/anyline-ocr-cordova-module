@@ -17,7 +17,7 @@ function Anyline() {}
  *
  *
  * @parameter options: an object; may be {}. Sample options object:
- *   [licenseKey, config]
+ *   {licenseKey: '', config: {...}}
  *
  * @parameter onSuccess: a callback function that accepts a response object; response keys
  * include ...
