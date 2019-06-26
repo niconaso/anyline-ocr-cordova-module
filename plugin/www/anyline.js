@@ -10,8 +10,7 @@
  *
  * @constructor
  */
-function Anyline() {
-}
+function Anyline() {}
 
 /**
  * Scan a credit card with card.io.
@@ -27,9 +26,8 @@ function Anyline() {
  * cancels card scanning.
  */
 Anyline.prototype.scan = function(options, onSuccess, onFailure) {
-  cordova.exec(onSuccess, onFailure, "AnylineSDK", "scan", options);
+  cordova.exec(onSuccess, onFailure, "AnylineSDK", "scan", [options.licenseKey, options.config]);
 };
-
 
 /**
  * Plugin setup boilerplate.
